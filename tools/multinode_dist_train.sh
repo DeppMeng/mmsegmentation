@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+sudo apt-get update
+sudo apt-get install jq -y
+
 
 all_containers=`cat $PHILLY_RUNTIME_CONFIG | jq ".containers[].id"`
 for container in $all_containers
