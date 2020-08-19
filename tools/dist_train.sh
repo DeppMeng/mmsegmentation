@@ -2,7 +2,7 @@
 
 PYTHON="/opt/conda/bin/python"
 
-$PYTHON -m pip install mmcv
+$PYTHON -m pip install mmcv==1.0.5
 $PYTHON -m pip install -e .
 
 CONFIG=$1
